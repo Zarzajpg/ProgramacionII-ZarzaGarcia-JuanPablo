@@ -26,5 +26,10 @@ Sí el nùmero brindado es 0, 1 o 2 indicar caso limite
 
 \#### Diagrama de flujo
 
+![Diagrama_de-Flujo](Clase1/Diagrama_NumP.png){width=50%}
+
+
+
+###
 
 

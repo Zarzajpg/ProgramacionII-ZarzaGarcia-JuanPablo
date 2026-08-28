@@ -24,11 +24,13 @@ Sí el nùmero brindado es 0, 1 o 2 indicar caso limite
 
 
 
-\#### Diagrama de flujo
+#### Diagrama de flujo
 
 ![Diagrama_de_Flujo](Diagrama_NumP.png)
 
+#### Pseudocodigo
 
+![Pseudocodigo](Pseu_Prim.png)
 
 ###
 

@@ -1,3 +1,4 @@
+package Clase5;
 class Persona {
     private String nombre;
     private int dni;

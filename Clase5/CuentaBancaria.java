@@ -5,12 +5,22 @@ public class CuentaBancaria {
     private int numeroCuenta;
     private double saldo;
     
-    public CuentaBancaria(String titular, int numeroCuenta, double saldo) {
-        this.titular = titular;
-        this.numeroCuenta = numeroCuenta;
-        this.saldo = saldo;
+    public CuentaBancaria(String titular, int numeroCuenta, double saldoInicial) {
+        setTitular(titular);
+        setNumeroCuenta(numeroCuenta);
+        
+        if (saldoInicial < 0) {
+            throw new IllegalArgumentException("El saldo inicial no puede ser negativo.");
+        }
+        this.saldo = saldoInicial;
     }
-    //getters y setters
+
+    // Segundo constructor: recibe solo titular y numeroCuenta
+    // Delega en el constructor principal asignando un saldo inicial de 0
+    public CuentaBancaria(String titular, int numeroCuenta) {
+        this(titular, numeroCuenta, 0.0);
+    }
+    //getters 
     public String getTitular() {
         return titular;
     }   
@@ -20,6 +30,7 @@ public class CuentaBancaria {
     public double getSaldo() {
         return saldo;
     }
+    //Setters con validaciones
     public void setTitular(String titular) {
         if (titular == null || titular.trim().isEmpty()) {
             throw new IllegalArgumentException("El titular no puede ser nulo o vacío.");
@@ -32,6 +43,7 @@ public class CuentaBancaria {
         }
         this.numeroCuenta = numeroCuenta;
     }
+    //Metodos para depositar y extraer dinero
     public double depositar(double monto) {
         if (monto <= 0) {
             throw new IllegalArgumentException("El depósito y el retiro deben ser positivos.");

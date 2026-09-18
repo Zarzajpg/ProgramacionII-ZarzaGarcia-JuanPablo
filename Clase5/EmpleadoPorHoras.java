@@ -1,4 +1,4 @@
-
+package Clase5;
 
 public class EmpleadoPorHoras extends Empleado {
     // Atributos privados

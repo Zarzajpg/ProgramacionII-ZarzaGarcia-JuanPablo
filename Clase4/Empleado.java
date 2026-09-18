@@ -1,4 +1,4 @@
-package Clase5;
+
 
 public class Empleado {
 	private String nombre;

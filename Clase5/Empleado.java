@@ -1,3 +1,4 @@
+package Clase5;
 
 public class Empleado {
 	protected String nombre;

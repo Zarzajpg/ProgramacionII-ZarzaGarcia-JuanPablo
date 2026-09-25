@@ -9,9 +9,17 @@ public class Empleado {
 		this.legajo = legajo;
 	}
 
-	public double calcularSueldo() {
-		return 0;
-	}
+	public String getNombre() {
+        return nombre;
+    }
+
+    public int getLegajo() {
+        return legajo;
+    }
+
+    public double calcularSueldo() {
+        return 0;
+    }
 
 	@Override
 	public String toString() {
